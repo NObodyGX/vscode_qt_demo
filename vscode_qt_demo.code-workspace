@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"C_Cpp.autocomplete": "Default",
+		"C_Cpp.default.includePath": [
+			"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/**"
+		],
+		"files.associations": {
+			"qlcdnumber": "cpp",
+			"qmouseevent": "cpp",
+			"qtimer": "cpp"
+		}
+	}
+}
