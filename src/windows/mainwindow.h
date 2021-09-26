@@ -4,8 +4,6 @@
 #include <QMainWindow>
 #include <QVBoxLayout>
 
-#include "../widgets/video_widget.h"
-
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
@@ -16,6 +14,5 @@ public:
 
 private:
     QVBoxLayout* layout;
-    VideoWidget* wi;
 };
 #endif // MAINWINDOW_H

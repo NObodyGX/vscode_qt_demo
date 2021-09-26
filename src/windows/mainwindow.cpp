@@ -1,12 +1,29 @@
+
+#include <QLabel>
+#include <QPixmap>
+#include <QWidget>
+
 #include "./mainwindow.h"
+#include "../widgets/video_widget.h"
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
-    wi = new VideoWidget(this);
+
+    QWidget* centralWidget = new QWidget(this);
+    centralWidget->setObjectName("centralWidget");
+    setCentralWidget(centralWidget);
+
+    VideoWidget* wi = new VideoWidget(this);
+    QLabel* lb = new QLabel(this);
+    QImage *img = new QImage();
+    img->load(":resource/images/open.png");
+    lb->setPixmap(QPixmap::fromImage(*img));
     layout = new QVBoxLayout(this);
     layout->addWidget(wi);
-    setLayout(layout);
+    layout->addWidget(lb);
+    centralWidget->setLayout(layout);
 }
 
 MainWindow::~MainWindow()
