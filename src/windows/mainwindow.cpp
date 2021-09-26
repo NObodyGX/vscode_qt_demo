@@ -20,7 +20,7 @@ MainWindow::MainWindow(QWidget *parent)
     QImage *img = new QImage();
     img->load(":resource/images/open.png");
     lb->setPixmap(QPixmap::fromImage(*img));
-    layout = new QVBoxLayout(this);
+    layout = new QVBoxLayout(centralWidget);
     layout->addWidget(wi);
     layout->addWidget(lb);
     centralWidget->setLayout(layout);
