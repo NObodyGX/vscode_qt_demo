@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(QTTest1 LANGUAGES CXX)
+project(QT_DEMO LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
@@ -28,11 +28,11 @@ FILE(GLOB_RECURSE HEAD_FILES "src/*.h")
 set(RCC_FILES resource.qrc)
 qt5_add_resources(QRC ${QRC_FILE})
 
-add_executable(QTTest1
+add_executable(QT_DEMO
   main.cpp
   ${SRC_FILES}
   ${HEAD_FILES}
   ${RCC_FILES}
 )
 
-target_link_libraries(QTTest1 PRIVATE Qt5::Widgets)
+target_link_libraries(QT_DEMO PRIVATE Qt5::Widgets)

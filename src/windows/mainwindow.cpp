@@ -3,8 +3,8 @@
 #include <QPixmap>
 #include <QWidget>
 
-#include "./mainwindow.h"
-#include "../widgets/video_widget.h"
+#include "mainwindow.h"
+#include "src/widgets/video_widget.h"
 
 
 MainWindow::MainWindow(QWidget *parent)

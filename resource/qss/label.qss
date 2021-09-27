@@ -1,0 +1,18 @@
+QLabel {
+	border: 2px solid #298DFF; /* 边框 */
+	border-radius: 3px; /* 边框圆角 */
+	background-color: #F2F2F2; /* 背景颜色 */
+	color: #298DFF; /* 文本颜色 */
+	font-family: "Microsoft YaHei"; /* 文本字体族 */
+	font-size: 10pt; /* 文本字体大小 */
+}
+
+QLabel:disabled { /* QLabel在禁用时的状态 */
+	border: 1px solid #B4B4B4;
+	background-color: #CDCDCD;
+	color: #B4B4B4;
+}
+
+QLabel#PaddingLabel { /* 定义有Padding的QLabel，PaddingLabel为对象名，在QSS中为特定对象定制样式 */
+	padding-left: 10px; /* 文本距离左边界有10px */
+}

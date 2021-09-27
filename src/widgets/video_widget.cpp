@@ -1,4 +1,4 @@
-#include "./video_widget.h"
+#include "video_widget.h"
 
 #include <QTimer>
 #include <QTime>

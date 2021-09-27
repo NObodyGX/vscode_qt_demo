@@ -1,7 +1,9 @@
 {
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "C_Cpp.default.includePath": [
+        "C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/**"
+    ],
     "files.associations": {
-        "new": "cpp",
-        "qmainwindow": "cpp"
+        "qapplication": "cpp"
     }
 }

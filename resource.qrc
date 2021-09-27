@@ -1,5 +1,6 @@
  <!DOCTYPE RCC><RCC version="1.0">
  <qresource>
      <file>resource/images/open.png</file>
+     <file>resource/qss/label.qss</file>
  </qresource>
  </RCC>
